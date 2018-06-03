@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Calculator</title>
+		<meta charset="UTF-8"/>
+		<style>
+		
+		
+		</style>
+		<script>
+			function plus(){
+				
+				document.Calculator.display.value += "+";
+			}
+			function minus(){
+			
+				document.Calculator.display.value += "-";
+			}
+			function div(){
+			
+				document.Calculator.display.value += "/";
+				
+			}
+			function multi(){
+			
+				document.Calculator.display.value += "*";
+			}
+			function clear()  {           
+				 document.Calculator.display.value = "";
+			}
+			
+		
+		</script>
+	</head>
+
+	<body>
+		<form name="Calculator">
+		
+		<input type="button" id="seven" value="7" onclick="document.Calculator.display.value +='7'"/>
+		<input type="button" id="eight" value="8" onclick="document.Calculator.display.value +='8'"/>
+		<input type="button" id="nine" value="9" onclick="document.Calculator.display.value +='9'"/><br><br>
+		<input type="button" id="four" value="4" onclick="document.Calculator.display.value +='4'"/>
+		<input type="button" id="five" value="5" onclick="document.Calculator.display.value +='5'"/>
+		<input type="button" id="six" value="6" onclick="document.Calculator.display.value +='6'"/><br><br>
+		<input type="button" id="one" value="1" onclick="document.Calculator.display.value +='1'"/>
+		<input type="button" id="two" value="2" onclick="document.Calculator.display.value +='2'"/>
+		<input type="button" id="three" value="3" onclick="document.Calculator.display.value +='3'"/><br><br>
+		<input type="button" id="zero" value="0" onclick="document.Calculator.display.value +='0'"/><br><br>
+		
+		<input type="button" value=" + " onclick="plus()">
+		<input type="button" value=" - " onclick="minus()">
+		<input type="button" value=" / " onclick="div()">
+		<input type="button" value=" * " onclick="multi()">
+		<input type="button" value=" = " onclick="document.Calculator.display.value = eval(document.Calculator.display.value)">
+		<input type="button" value=" C " onclick="clear()"><br><br>
+		<input name="display"/>
+		
+		</form>
+	</body>
+
+
+
+</html>
